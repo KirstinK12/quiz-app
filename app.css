@@ -1,0 +1,130 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/ 
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5%;
+  background-color: darkgray;
+  color: white;
+}
+header {
+  padding: 25px 0 0 0;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.question-and-score {
+  font-weight: 600px;
+  color:white;
+  list-style: none;
+  text-align: center;
+  margin-bottom:2%;
+  padding:0;
+}
+
+.container {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 5% 5% 8% 5%;
+  margin: 10px;
+}
+
+.question-form .question {
+   font-size: 20px;
+   margin-bottom: 4%;
+}
+
+.question-form button {
+  float:right;
+}
+
+.results {
+  font-size: 18px;
+}
+
+#next-question-btn {
+  display: none;
+}
+
+.right-answer {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px 20px;
+  border:2px solid blue;
+}
+
+.wrong-answer {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 5px 20px;
+  border:2px solid red;
+}
+
+button {
+  margin-top:5px;
+  height: auto;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius:3px;
+  padding: 5px 10px;
+}
+
+@media all and (min-width: 800px) {
+  h1 {
+    font-size: 60px;
+  }
+  
+  p {
+    font-size: 30px;
+  }
+
+  .question-and-score {
+  font-size: 25px;
+  }
+
+.question-form .question {
+  font-size: 35px;
+}
+
+  .container {
+  margin-bottom: 5px;
+  border: 1px solid black;
+  padding: 1% 1% 5% 1%;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.results {
+  font-size: 25px;
+}
+
+button {
+  margin-top:5px;
+  height: auto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius:3px;
+  padding: 10px 20px;
+}
